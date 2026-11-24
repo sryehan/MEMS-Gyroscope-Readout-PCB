@@ -1,0 +1,22 @@
+Designator,Qty,Value / Function,Part number,Package,Notes
+"U1, U2, U3",3,"Op-amp, 500 MHz FET-input (charge amps + TIA)",LTC6268IS8#PBF,SOIC-8,
+"U4, U7",2,"Op-amp, precision (drive buffer / inverter)",OPA192IDBVR,SOT-23-5,
+U5,1,"Ultra-low-noise LDO, +5 V out",LT3045EDD#TRPBF,DFN-10 3x3 mm (EP),RSET = R15
+U6,1,"2.5 V precision voltage reference",REF5025AIDR,SOIC-8,
+"R1, R3",2,10 MΩ,,0603,Charge-amp feedback
+"R2, R4, R6",3,49.9 Ω,,0603,SMA output series resistors
+R5,1,1 MΩ,,0603,TIA feedback
+R7,1,100 kΩ,,0603,
+"R8, R9",2,10 kΩ,,0603,Inverter gain set (−1)
+"R10, R11",2,1 kΩ,,0603,Drive output series resistors
+"R12, R13, R14",3,1 MΩ,,0603,Bias RC filters (ROT / QT1 / QT2)
+R15,1,49.9 kΩ,,0603,LT3045 RSET → 5.0 V
+"C1, C3, C5",3,1 pF C0G,0603CG1R0C500NT,0603,Feedback capacitors
+"C2, C4, C6, C7, C8, C9, C11, C12, C13, C17",10,100 nF,CL10B104KB8NNNC,0603,Decoupling / bias filters
+"C10, C14, C16, C18",4,10 µF,CL10A106KP8NNNC,0603,Bulk decoupling
+C15,1,4.7 µF,,0603,LT3045 CSET
+C19,1,1 µF,CL10A105KB8NNNC,0603,REF5025 noise reduction
+J1,1,MEMS gyroscope bare die,—,MEMS_GYRO_COB_10,"Chip-on-board, wire-bonded; not machine-assembled"
+J2,1,"Bias header, 4-pin",PZ254V-11-04P,2.54 mm THT,"GND, ROT, QT1, QT2 bias inputs"
+J3,1,"Power header, 2-pin",PZ254V-11-02P,2.54 mm THT,VIN / GND
+"J4, J5, J6, J7",4,SMA edge/vertical connector,SMA-KE,SMA,"S+ out, S− out, drive-sense out, drive in"
